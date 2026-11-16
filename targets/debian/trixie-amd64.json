@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 2,
+  "status": "ci-baseline",
+  "id": "debian-trixie-amd64",
+  "base": {
+    "distribution": "Debian",
+    "release": "13",
+    "codename": "trixie",
+    "sourcePocket": "security",
+    "architecture": "amd64"
+  },
+  "source": {
+    "format": "3.0 (quilt)",
+    "version": "2.4.69-1~deb13u1",
+    "publication": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/",
+    "descriptor": {
+      "name": "apache2_2.4.69-1~deb13u1.dsc",
+      "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/a/apache2/apache2_2.4.69-1~deb13u1.dsc",
+      "sha256": "de4332321f0ac4491031ab7fb84bdfd62dfc48d98a93f628a0b2036044f0ffb6",
+      "bytes": 3529
+    },
+    "files": [
+      {
+        "name": "apache2_2.4.69.orig.tar.gz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz",
+        "sha256": "c551b9861e26f146f57e1b1765e69c89a60b3db0ec252ccab0d36283487016bb",
+        "bytes": 10822928,
+        "role": "upstream-source"
+      },
+      {
+        "name": "apache2_2.4.69.orig.tar.gz.asc",
+        "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/a/apache2/apache2_2.4.69.orig.tar.gz.asc",
+        "sha256": "68c3ec70702d49fb2f0f9fd9ff6788bfcd88a9f7e4786c0ee0a0b8d6d9741f8e",
+        "bytes": 870,
+        "role": "upstream-signature"
+      },
+      {
+        "name": "apache2_2.4.69-1~deb13u1.debian.tar.xz",
+        "url": "https://snapshot-fastly.debian.org/archive/debian-security/20261030T000000Z/pool/updates/main/a/apache2/apache2_2.4.69-1~deb13u1.debian.tar.xz",
+        "sha256": "779dac5ec4c04c08eb030e2182652607ad61b65fcc1b24051381c7a6411ab3de",
+        "bytes": 828308,
+        "role": "debian-packaging"
+      }
+    ],
+    "signatureVerification": {
+      "verified": false,
+      "note": "Source pins were selected from the pinned Debian snapshot Sources index. The uploader signature was not separately authenticated."
+    }
+  },
+  "supportedSourceVersions": [
+    "2.4.69-1~deb13u1"
+  ],
+  "packageVersion": "2.4.69-1~deb13u1+getpatched1",
+  "releaseSerial": 1,
+  "changelog": {
+    "distribution": "trixie",
+    "urgency": "low",
+    "maintainer": "GetPatched Maintainers <packages@getpatched.dev>",
+    "date": "Mon, 16 Nov 2026 08:00:00 +0000"
+  },
+  "binaryPackages": [
+    "apache2",
+    "apache2-bin",
+    "apache2-data",
+    "apache2-utils"
+  ],
+  "patches": []
+}
